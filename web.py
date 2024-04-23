@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from imblearn.over_sampling import SMOTE
 import streamlit as st
 
-df = pd.read_csv("C:/ADS Capstone Project/Medicaldataset.csv")
+df = pd.read_csv("https://drive.google.com/file/d/1I36P5NgEC6Oj80auwBOUSDeOfMHK03gc/view?usp=drive_link")
 
 df.drop(df[df['Heart rate']>300].index, inplace=True)
 
